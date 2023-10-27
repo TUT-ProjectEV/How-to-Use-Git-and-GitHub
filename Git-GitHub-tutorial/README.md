@@ -7,7 +7,7 @@
 - Gitのインストールと初期設定 [^1] 、GitHubアカウントの作成 [^2] まで完了しているものとする
 
 ## リモートリポジトリ作成
-1. [GitHub](https://github.com/) にアクセスし、 `Create repository` をクリック
+1. [GitHub](https://github.com/) から自分のアカウントにサインインし、 `Create repository` をクリック
 ![Screenshot of Dashboard](/Git-GitHub-tutorial/images/create-repository-1.png)
 2. `Repository name` に任意のリポジトリ名を入力
 - 半角で入力
@@ -25,7 +25,7 @@
 cd Desktop
 ```
 2. 先ほど作成したリモートリポジトリをローカルにクローン [^3]
-- もしhttps通信でクローン出来ない人はSSH接続の設定を行ってください [^1]
+- もしhttps通信でクローン出来ない人はSSH接続の設定 [^1] を行ってください
 #### https通信でのクローン
 ```
 git clone https://github.com/"Username"/"Repository name".git
@@ -42,6 +42,7 @@ warning: You appear to have cloned an empty repository.
 ```
 cd "Repository name"
 ```
+4. コマンドプロンプトはそのままにしておく
 
 ## ローカルリポジトリにコミット
 1. エクスプローラーを開き、クローンしたリポジトリを確認
@@ -72,6 +73,7 @@ git log
 ```
 git push origin main
 ```
+- ここでもしパスワードなど聞かれた場合、SSH接続の設定 [^1] を行ってください [^5]
 2. 最初にリモートリポジトリを作成したときのwebページを確認
 3. 自分がローカルリポジトリで変更した内容が反映されていればチュートリアル完了
 
@@ -84,3 +86,4 @@ git push origin main
 [^2]: [GitHubアカウントの作成手順](/GitHub-creating-account/)
 [^3]: "" の部分は各自読み替え ("" は不要)
 [^4]: `-m` はコミットメッセージを入力するオプションであり、コミットメッセージは履歴情報を詳細に記録するのに役立つ
+[^5]: ここで要求されるパスワードはアカウントにサインインするときのものとは異なるため (どうしてもSSH接続の設定をしたくない人は個人アクセストークンを作成してください)
