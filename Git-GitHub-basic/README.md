@@ -55,6 +55,3 @@
 - GitHub
     - Gitのリモートリポジトリとして機能
     - チーム開発を支援する機能などが組み込まれている
-
-## Reference
-- [サル先生のGit入門](https://backlog.com/ja/git-tutorial/intro/01/)
