@@ -19,13 +19,12 @@ git --version
 9. Gitのバージョンが表示されればインストール成功の合図
 
 ## Settings
-- "" の部分は各自読み替え ("" は不要)
 - 先にGitHubアカウントを作成し、そのユーザーネーム/メールアドレスを使用することを推奨 [^1]
-1. ユーザーネームの設定
+1. ユーザーネームの設定 [^2]
 ```
 git config --global user.name "User Name"
 ```
-2. ユーザーメールアドレスの設定
+2. ユーザーメールアドレスの設定 [^2]
 ```
 git config --global user.email "User@email.com"
 ```
@@ -35,4 +34,36 @@ git config -l
 ```
 4. 設定したユーザーネーム/メールアドレスが確認できれば完了
 
+## SSH接続の設定 (任意)
+- ここはGitHubアカウント作成済みであることが前提
+1. コマンドプロンプトを起動
+2. 公開鍵・秘密鍵の発行
+```
+ssh-keygen -t rsa
+```
+3. 特に設定が必要なければEnter連打
+4. 公開鍵の表示 [^2]
+```
+type /c/Users/"ユーザー名"/.ssh/id_rsa.pub
+```
+5. `ssh-rsa...` から始まる箇所をコピーしておく
+6. [GitHub](https://github.co.jp/) にアクセスし、サインイン
+7. 画面右上のアカウントのアイコンをクリックし、 `Settings` をクリック
+8. `SSH and GPG keys` をクリック
+9. `New SSH key` をクリック
+10. `Title` に今自分が使用しているPCの名前を入力
+- なんでもよい
+- 自分がその `Title` を見てどのPCを言っているのかわかるようなものにすることを推奨
+11. `Key` に先ほどコピーした `ssh-rsa...` から始まる箇所をペースト
+12. `Add SSH key` をクリック
+13. コマンドプロンプトに戻り、以下のコマンドを実行
+```
+ssh -T git@github.com
+```
+14. 以下のような表示がでれば成功 [^2]
+```
+Hi "Username"! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
 [^1]: [GitHubアカウント作成手順](/GitHub-creating-account/)
+[^2]: "" の部分は各自読み替え ("" は不要)
