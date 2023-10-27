@@ -65,5 +65,5 @@ ssh -T git@github.com
 Hi "Username"! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-[^1]: [GitHubアカウント作成手順](/GitHub-creating-account/)
+[^1]: [GitHubアカウント作成手順](./GitHub-creating-account/)
 [^2]: "" の部分は各自読み替え ("" は不要)
