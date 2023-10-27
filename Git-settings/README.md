@@ -20,7 +20,7 @@ git --version
 
 ## Settings
 - "" の部分は各自読み替え ("" は不要)
-- 先にGitHubアカウントを作成し、そのユーザーネーム/メールアドレスを使用することを推奨
+- 先にGitHubアカウントを作成し、そのユーザーネーム/メールアドレスを使用することを推奨 [^1]
 1. ユーザーネームの設定
 ```
 git config --global user.name "User Name"
@@ -34,3 +34,5 @@ git config --global user.email "User@email.com"
 git config -l
 ```
 4. 設定したユーザーネーム/メールアドレスが確認できれば完了
+
+[^1]: [GitHubアカウント作成手順](/GitHub-creating-account)
