@@ -35,4 +35,4 @@ git config -l
 ```
 4. 設定したユーザーネーム/メールアドレスが確認できれば完了
 
-[^1]: [GitHubアカウント作成手順](/GitHub-creating-account)
+[^1]: [GitHubアカウント作成手順](/GitHub-creating-account/)
