@@ -1,4 +1,5 @@
 # How-to-Use-Git-and-GitHub
+Last Updated 2023/10/28
 
 ## Overview
 - Git, GitHubの基本や使い方のまとめ
