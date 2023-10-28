@@ -80,7 +80,7 @@ git push origin main
 ## Well done!
 - お疲れ様でした
 - GitやGitHubには他にもソフト開発やチームでの開発を支援する機能がたくさん備わっているので、気になる人は調べてみてください
-- わからないことはDiscordなど用いて聞いても構いませんが、このリポジトリの `Issues` に投げてみても良いかもしれません
+- わからないことはDiscordなど用いて聞いても構いませんが、このリポジトリの `Discussions` に投げてみても良いかもしれません
 
 [^1]: [Gitのインストールと初期設定手順](./Git-settings/)
 [^2]: [GitHubアカウントの作成手順](./GitHub-creating-account/)
