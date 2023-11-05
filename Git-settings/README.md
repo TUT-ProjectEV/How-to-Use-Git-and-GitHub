@@ -44,7 +44,7 @@ ssh-keygen -t rsa
 3. 特に設定が必要なければEnter連打
 4. 公開鍵の表示 [^2]
 ```
-type /c/Users/"ユーザー名"/.ssh/id_rsa.pub
+type C:\Users\"ユーザー名"\.ssh\id_rsa.pub
 ```
 5. `ssh-rsa...` から始まる箇所全文をコピーしておく
 6. [GitHub](https://github.co.jp/) にアクセスし、サインイン
