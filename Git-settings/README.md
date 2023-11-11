@@ -49,18 +49,18 @@ type C:\Users\"ユーザー名"\.ssh\id_rsa.pub
 5. `ssh-rsa...` から始まる箇所全文をコピーしておく
 6. [GitHub](https://github.co.jp/) にアクセスし、サインイン
 7. 画面右上のアカウントのアイコンをクリックし、 `Settings` をクリック
-![Screenshot of Dashboard](/Git-settings/images/ssh-settings-1.png)
-![Screenshot of screen after icon was clicked](/Git-settings/images/ssh-settings-2.png)
+![Screenshot of Dashboard](images/ssh-settings-1.png)
+![Screenshot of screen after icon was clicked](images/ssh-settings-2.png)
 8. `SSH and GPG keys` をクリック
-![Screenshot of Settings](/Git-settings/images/ssh-settings-3.png)
+![Screenshot of Settings](images/ssh-settings-3.png)
 9. `New SSH key` をクリック
-![Screenshot of SSH and GPG keys](/Git-settings/images/ssh-settings-4.png)
+![Screenshot of SSH and GPG keys](images/ssh-settings-4.png)
 10. `Title` に今自分が使用しているPCの名前を入力
 - なんでもよい
 - 自分がその `Title` を見てどのPCを言っているのかわかるようなものにすることを推奨
 11. `Key` に先ほどコピーした `ssh-rsa...` から始まる箇所をペースト
 12. `Add SSH key` をクリック
-![Screenshot of Add new SSH Key](/Git-settings/images/ssh-settings-5.png)
+![Screenshot of Add new SSH Key](images/ssh-settings-5.png)
 13. コマンドプロンプトに戻り、以下のコマンドを実行
 ```
 ssh -T git@github.com
