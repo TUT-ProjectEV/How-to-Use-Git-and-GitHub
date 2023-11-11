@@ -1,4 +1,4 @@
-# Git GitHub Tutorial
+# Git GitHub Tutorial 1
 
 ## About
 - Git, GitHubの基本的な使い方を学ぶチュートリアル
@@ -8,13 +8,13 @@
 
 ## リモートリポジトリ作成
 1. [GitHub](https://github.com/) から自分のアカウントにサインインし、 `Create repository` をクリック
-![Screenshot of Dashboard](/Git-GitHub-tutorial/images/create-repository-1.png)
+![Screenshot of Dashboard](/images/create-repository-1.png)
 2. `Repository name` に任意のリポジトリ名を入力
 - 半角で入力
 - その他にも設定項目があるが、今は一旦デフォルトで進める
-![Screenshot of Create a new repository](/Git-GitHub-tutorial/images/create-repository-2.png)
+![Screenshot of Create a new repository](/images/create-repository-2.png)
 3. `Create repository` をクリック
-![Screenshot of Create a new repository, finish fill in Repository name](/Git-GitHub-tutorial/images/create-repository-3.png)
+![Screenshot of Create a new repository, finish fill in Repository name](/images/create-repository-3.png)
 4. リポジトリの作成完了
 
 ## ローカルリポジトリ作成
@@ -47,10 +47,10 @@ cd "Repository name"
 ## ローカルリポジトリにコミット
 1. エクスプローラーを開き、クローンしたリポジトリを確認
 2. そのフォルダ内で右クリックし、 `新規作成>テキストドキュメント` をクリック
-![Screenshot of Folder](/Git-GitHub-tutorial/images/commit-rocal-repository-1.png)
+![Screenshot of Folder](/images/commit-rocal-repository-1.png)
 3. 任意の名前を入力して、ファイル作成
 4. メモ帳でそのファイルを開き、適当な文を入力
-![Screenshot of Memo editor](/Git-GitHub-tutorial/images/commit-rocal-repository-2.png)
+![Screenshot of Memo editor](/images/commit-rocal-repository-2.png)
 5. 保存して終了
 6. コマンドプロンプトに戻り、インデックスへ作成したファイルを追加する [^3]
 ```
