@@ -16,6 +16,7 @@
 4. 参加完了
 
 ## GitHubを使用したチーム開発におけるルール
+- [Project EV rules](https://github.com/TUT-ProjectEV/.github-private/tree/develop/profile) 参照
 
 ## リモートリポジトリ作成
 
