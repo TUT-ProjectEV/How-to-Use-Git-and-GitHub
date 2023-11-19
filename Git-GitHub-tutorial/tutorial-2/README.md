@@ -17,7 +17,7 @@
 1. [TUT-ProjectEV](https://github.com/TUT-ProjectEV) の管理者にユーザーネームを伝え、招待してもらう
 2. 自身のGitHubアカウントに設定したメールアドレス宛に招待メールが届くので、 `Join @TUT-ProjectEV` をクリック
 ![Screenshot of invite email](images/join-organization-1.png)
-3. webページに飛ばされるので、 'Join 東京工科大学 ProjectEV' をクリック
+3. webページに飛ばされるので、 `Join 東京工科大学 ProjectEV` をクリック
 4. 参加完了
 
 ## GitHubを使用したチーム開発におけるルール
