@@ -1,5 +1,5 @@
 # How-to-Use-Git-and-GitHub
-Last Updated 2023/11/11
+Last Updated 2023/11/19
 
 ## Overview
 - Git, GitHubの基本や使い方のまとめ
@@ -9,6 +9,7 @@ Last Updated 2023/11/11
 - [GitHubアカウントの作成手順](./GitHub-creating-account/)
 - [Gitのインストールと初期設定手順](./Git-settings/)
 - [Git, GitHubチュートリアル](./Git-GitHub-tutorial/)
+- [GitHub Desktopの基本](./GitHubDesktop-basic/)
 
 ## Features
 ### Git, GitHubの基本
@@ -32,6 +33,11 @@ Last Updated 2023/11/11
 - ローカルリポジトリにコミット
 - リモートリポジトリにプッシュ
 - Well done!
+### GitHub Desktopの基本
+- About
+- What is GitHub Desktop
+- How to Install
+- How to Use
 
 ## Reference
 - [サル先生のGit入門](https://backlog.com/ja/git-tutorial/)
