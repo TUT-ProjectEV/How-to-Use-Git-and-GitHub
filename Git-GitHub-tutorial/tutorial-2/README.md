@@ -6,6 +6,11 @@
 - チームのリポジトリでの作業の流れ
 - Gitのインストールと初期設定 [^1] 、GitHubアカウントの作成 [^2] まで完了しているものとする
 
+## Description
+- チュートリアルでやること
+    - 各班の自己紹介リポジトリ (作成済み) に自分の自己紹介を追加
+    - 自分の名前のディレクトリを作成し、その下に 'README.md' ファイルを置く
+
 ## Organizationへの参加
 - チームのアカウントをGitHubでは 'Organization' として扱う
 - 'Organization' のリポジトリにアクセスし、開発を行っていくには 'Organization' の管理者に招待してもらい、参加する必要がある
@@ -19,6 +24,8 @@
 - [Project EV rules](https://github.com/TUT-ProjectEV/.github-private/tree/develop/profile) 参照
 
 ## リモートリポジトリ作成
+- 自己紹介リポジトリは作成済みなので、ここはスキップでOK
+    - 今後の使い方の参考までに書いておく
 1. [TUT-ProjectEV](https://github.com/TUT-ProjectEV) へアクセス
 2. 画面上部 'Repositories' タブをクリック
 ![Screenshot of team page](images/creating-remote-repository-1.png)
