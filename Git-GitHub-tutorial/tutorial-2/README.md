@@ -41,6 +41,27 @@
 ![Screenshot of create a new repository](images/creating-remote-repository-3.png)
 
 ## リモートリポジトリをローカルにクローン
+- Gitのコマンドで説明していくが、GitHub Desktopを使用して行うことも可能 [^3]
+- ここでは、自分が所属する班の自己紹介リポジトリをクローンする
+1. コマンドプロンプトを開く
+2. リポジトリをクローンしたい場所に移動 [^4]
+```
+cd "移動先ディレクトリのパス"
+```
+3. リポジトリをクローン [^4]
+```
+git clone "リモートリポジトリのURL"
+```
+- パワトレ班の自己紹介リポジトリをデスクトップにクローンする場合
+```
+コマンドプロンプトを開き、以下を実行
+cd Desktop
+git clone https://github.com/TUT-ProjectEV/Power-Train-Self-Introduction.git
+```
+- リポジトリのURLの確認方法
+    - GitHubでクローンしたいリポジトリにアクセスし、緑色の `Code` をクリック
+    - 出てきた小ウィンドウ内で、ワンクリックでURLをコピーできる
+![Screenshot of URL copy](images/clone-remote-repository-to-local-1.png)
 
 ## 自分の作業ブランチ作成
 
@@ -56,3 +77,5 @@
 
 [^1]: [Gitのインストールと初期設定手順](./../Git-settings/)
 [^2]: [GitHubアカウント作成手順](./../GitHub-creating-account/)
+[^3]: [GitHub Desktopの基本](./../../GitHubDesktop-basic/)
+[^4]: "" の部分は各自読み替え ("" は不要)
