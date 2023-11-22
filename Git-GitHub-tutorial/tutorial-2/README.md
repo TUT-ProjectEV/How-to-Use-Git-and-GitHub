@@ -64,8 +64,58 @@ git clone https://github.com/TUT-ProjectEV/Power-Train-Self-Introduction.git
 ![Screenshot of URL copy](images/clone-remote-repository-to-local-1.png)
 
 ## 自分の作業ブランチ作成
+- ローカルリポジトリで作業を始めるときは毎回この手順を踏むこと
+- `develop` ブランチには常に正常動作するものを置いておくための手順
+1. 作業を行うリポジトリに移動 [^4]
+```
+cd "リポジトリのパス"
+```
+2. 現在のブランチを確認
+```
+git branch
+```
+3. `develop` ブランチに入る (すでに入っている場合はスキップ)
+```
+git checkout develop
+```
+4. リモートリポジトリで `develop` ブランチの更新があるか確認
+```
+git pull
+```
+5. `feature/xxx` ブランチを切る (`xxx` は適宜読み替え)
+```
+git checkout -b feature/xxx
+```
+6. `feature/xxx` ブランチで開発
+
+## 自己紹介ファイルの作成・編集
+1. エクスプローラーを開く
+2. 自己紹介リポジトリに移動
+3. 自分の名前のフォルダを作成し、そのフォルダに入る 
+4. 右クリック>新規作成>テキストドキュメントをクリックし、ファイル名を `README.md` にして作成
+5. `README.md` を開き、編集・保存 (メモ帳でも何でも良い)
+- 以下、一例です
+  - Markdown方式で記述することをおすすめします [^5]
+```
+# 高村 漱大 (たかむら そうた)
+## 所属班
+- 電装班 (パワトレ班)
+## 好きな食べ物
+- 寿司
+```
+> [!NOTE]
+> エクスプローラー内でファイル拡張子を表示する設定にしておかないと、正しく `README` が表示されません
 
 ## ローカルリポジトリにコミット
+1. 追加・変更したファイルを指定 [^4]
+```
+git add "ファイルのパス"
+```
+2. コミット (追加・変更を保存)
+```
+git commit -m "コミットメッセージ"
+```
+    - ここは "" が必要なので注意
 
 ## リモートリポジトリにプッシュ
 
@@ -79,3 +129,4 @@ git clone https://github.com/TUT-ProjectEV/Power-Train-Self-Introduction.git
 [^2]: [GitHubアカウント作成手順](./../GitHub-creating-account/)
 [^3]: [GitHub Desktopの基本](./../../GitHubDesktop-basic/)
 [^4]: "" の部分は各自読み替え ("" は不要)
+[^5]: Markdown方式の書き方は [こちら](https://docs.github.com/ja/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
