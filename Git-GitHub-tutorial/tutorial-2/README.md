@@ -10,6 +10,7 @@
 - チュートリアルでやること
     - 各班の自己紹介リポジトリ (作成済み) に自分の自己紹介を追加
     - 自分の名前のディレクトリを作成し、その下に 'README.md' ファイルを置く
+    - 今回編集するファイルには、__外部に公開したくない情報は書かないで!__
 
 ## Organizationへの参加
 - チームのアカウントをGitHubでは 'Organization' として扱う
@@ -83,6 +84,7 @@ git checkout develop
 git pull
 ```
 5. `feature/xxx` ブランチを切る (`xxx` は適宜読み替え)
+    - 今回は自分の名前のフォルダを作ってそこに `README.md` を置くので、 `feature/"名前 (半角アルファベット)` というブランチを作成
 ```
 git checkout -b feature/xxx
 ```
@@ -91,8 +93,9 @@ git checkout -b feature/xxx
 ## 自己紹介ファイルの作成・編集
 1. エクスプローラーを開く
 2. 自己紹介リポジトリに移動
-3. 自分の名前のフォルダを作成し、そのフォルダに入る 
+3. 新規作成から自分の名前のフォルダを作成し、そのフォルダに入る 
 4. 右クリック>新規作成>テキストドキュメントをクリックし、ファイル名を `README.md` にして作成
+    - ファイル名の拡張子も `.txt` から `.md` に変更すること
 5. `README.md` を開き、編集・保存 (メモ帳でも何でも良い)
 - 以下、一例です
   - Markdown方式で記述することをおすすめします [^5]
@@ -103,6 +106,17 @@ git checkout -b feature/xxx
 ## 好きな食べ物
 - 寿司
 ```
+- 作業後のフォルダの中身はこんな感じ
+  - パワトレ班・高村の場合
+```
+Power-Train-Self-Introduction
+├─ .github
+├─ Takamura
+│   └─ README.md
+├─ .gitignore
+├─ LICENSE
+└─ README.md
+```
 > [!NOTE]
 > エクスプローラー内でファイル拡張子を表示する設定にしておかないと、正しく `README` が表示されません
 
@@ -112,18 +126,49 @@ git checkout -b feature/xxx
 git add "ファイルのパス"
 ```
 2. コミット (追加・変更を保存)
+    - ここは "" が必要なので注意
 ```
 git commit -m "コミットメッセージ"
 ```
-    - ここは "" が必要なので注意
 
 ## リモートリポジトリにプッシュ
+1. リモートリポジトリに追加・変更を反映させる
+```
+git push origin feture/xxx
+```
+2. GitHubでリモートリポジトリの中身を確認すると、反映されているのがわかる
+    - `feature/xxx` ブランチに切り替えて確認しよう
 
 ## プルリクエスト作成
+- `develop` ブランチに反映させるには、プルリクエストを作成してレビューをしてもらい、マージさせる必要がある
+1. ブラウザからチームのGitHubにアクセスし、追加・変更を加えたリポジトリにアクセスする
+2. `Pull request` タブをクリック
+3. `New pull request` をクリック
+![Screenshot of pull request tab](images/creating-pull-request-1.png)
+4. マージ先 `develop` ブランチと自分が作業した `feature/xxx` ブランチを設定し、 `Create pull request` をクリック
+![Screenshot of creating pull request](images/creating-pull-request-2.png)
+5. テンプレートが出来上がっているので、必要事項を記入し、 `Create pull request` をクリック
+    - 今回は `Purpose` と `Effect` ぐらいの記入で大丈夫
+![Screenshot of filling in pull request](iamges/../images/creating-pull-request-3.png)
+6. 現時点では `Review required` , `Merging is blocked` と表示され、 `develop` ブランチにはマージできない
 
 ## プルリクエスト承認
+- プルリクを作成したら自分以外の誰かに承認をもらわなければならない
+- 以下、承認を出す手順
+1. `Pull request` タブから、該当プルリクを確認
+2. `Files changed` タブをクリック
+3. 追加・変更のチェック
+4. 問題なければ、 `Review changes` をクリックし、必要に応じてコメントを記入し、 `Approve` にチェックを入れ、 `Submit review` をクリック
+    - コメントしたいだけなら `Comment` にチェック、変更してほしい箇所があるなら `Request changes` にチェックする
+
+## `develop` ブランチにマージ
+1. プルリクエストが承認され、 `develop` ブランチへのマージが可能になったら、 `Merge pull request` をクリック
+2. マージが完了したら、 `Delete branch` をクリックし、 `feature/xxx` ブランチは削除する
 
 ## Well done!
+- GitHubで自分のディレクトリに入ってみましょう
+- うまくいっていれば、`README` が表示され、ちょっとしたサイトのようになっているはずです
+- わからないことがあれば、このリポジトリの `Discussions` の `Q&A` などに投げてみてください
 
 [^1]: [Gitのインストールと初期設定手順](./../Git-settings/)
 [^2]: [GitHubアカウント作成手順](./../GitHub-creating-account/)
